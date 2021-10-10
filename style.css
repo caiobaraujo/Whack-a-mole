@@ -1,0 +1,48 @@
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+body {
+  color: white;
+}
+
+.grid {
+  width: 606px;
+  height: 606px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  border: solid black 1px;
+}
+
+.mole {
+  background-image: url('mole.jpg');
+  background-size: cover;
+}
+
+.effect:hover {
+  animation: bounce 0.3s;
+}
+
+.scoreTime {
+  text-align: center;
+}
